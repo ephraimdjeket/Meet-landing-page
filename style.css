@@ -49,6 +49,14 @@ img {
   background-color: var(--clr-cyan-300);
 }
 
+.purple {
+  background-color: var(--clr-purple-600);
+}
+
+.purple:hover {
+  background-color: var(--clr-purple-300);
+}
+
 body {
   font-family: var(--red-hat-display);
   background-color: var(--clr-white);
@@ -119,6 +127,12 @@ body {
   cursor: pointer;
 }
 
+.download-btn {
+  margin: auto;
+  width: 193px;
+  height: 56px;
+}
+
 .what-btn {
   background-color: var(--clr-purple-600);
   width: 161px;
@@ -156,6 +170,9 @@ body {
   color: var(--clr-slate-600);
   width: 56px;
   height: 136px;
+}
+
+.number-1 {
   margin-bottom: var(--spacer-800);
 }
 
@@ -182,9 +199,213 @@ body {
 .group-image-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 1rem;
+  margin-bottom: var(--spacer-800);
 }
 
 .group-image-container img {
   width: 147.5px;
+  border-radius: 8px;
+}
+
+.cyan-small-title {
+  letter-spacing: 3px;
+  font-weight: 800;
+  color: var(--clr-cyan-600);
+}
+
+.second-content > h2 {
+  color: var(--clr-slate-900);
+  font-weight: 1000;
+  font-size: 2rem;
+  margin-top: var(--spacer-200);
+  margin-bottom: var(--spacer-400);
+}
+
+.second-content-paragraph {
+  color: var(--clr-slate-600);
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+
+/* Third section */
+
+.number-2 {
+  margin: auto;
+  z-index: 3;
+  position: relative;  
+  top: -6.9rem;
+}
+
+.number-02 {
+  background-color: var(--clr-white);
+
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--clr-cyan-600);
+  opacity: 0.7;
+}
+
+.third-section-wrapper {
+  position: relative;
+  overlay: var(--clr-cyan-600);
+  background-image: url("assets/mobile/image-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 7rem;
+}
+
+.third-section-content {
+  position: absolute;
+  bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+  width: 311px;
+}
+
+.third-section-content > h2, .third-section-content > p {
+  color: var(--clr-white);
+}
+
+.third-section-content > h2 {
+  font-size: 2rem;
+  font-weight: 1000;
+}
+
+.third-section-content > p {
+  margin: var(--spacer-300) 0rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+/* Tablet view */
+@media screen and (min-width: 768px) {
+
+/* First section hero */
+.group-image {
+  width: 820px;
+}
+
+.hero-content {
+  margin-top: var(--spacer-900);
+  margin-bottom: var(--spacer-800);
+
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 408px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  max-width: 350px;
+}
+
+.button-wrapper {
+  flex-direction: row;
+  max-width: 408px;
+}
+
+/* Second section */
+
+.second-section-wrapper {
+  margin-top: var(--spacer-700);
+}
+
+.second-content {
+  max-width: 680px;  
+}
+
+.group-image-container {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.group-image-container img {
+  width: 157px;
+}
+
+.cyan-small-title {
+  letter-spacing: 4px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--clr-cyan-600);
+}
+
+.second-content > h2 {
+  margin: auto;
+  font-size: 2.25rem;
+  width: 445px;
+  margin-top: var(--spacer-200);
+}
+
+.second-content-paragraph {
+  width: 514px;
+  margin: auto;
+  padding: var(--spacer-400);
+}
+
+/* Third section */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--clr-cyan-600);
+  opacity: 0.7;
+}
+
+.third-section-wrapper {
+  position: relative;
+  overlay: var(--clr-cyan-600);
+  background-image: url("assets/tablet/image-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 7rem;
+}
+
+.third-section-content {
+  position: absolute;
+  bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+  width: 311px;
+}
+
+.third-section-content > h2, .third-section-content > p {
+  color: var(--clr-white);
+}
+
+.third-section-content > h2 {
+  font-size: 2rem;
+  font-weight: 1000;
+}
+
+.third-section-content > p {
+  margin: var(--spacer-300) 0rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
 }
