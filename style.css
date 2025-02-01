@@ -76,6 +76,10 @@ body {
 
 /* First section hero */
 
+.group-left, .group-right {
+  display: none;
+}
+
 .hero-content {
   position: relative;
   display: flex;
@@ -410,6 +414,10 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
+
+  .group-left, .group-right {
+    display: block;
+  }
 
   .group-image {
     display: none;
